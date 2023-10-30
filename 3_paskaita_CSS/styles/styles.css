@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+}
+
+
+h1 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+h1.kita_spalva {
+    color: goldenrod;
+
+}
+
+h1:hover {
+    color: black;
+}
+
+p.kita_spalva {
+    color: coral;
+    font-weight: bold;
+}
+
+#main_title {
+    color: darkgreen;
+    background-color: black;
+}
+
+h2.sub-title.juoda {
+    text-align: center;
+    font-size: 32px;
+    color: brown;
+}
+
+table p {
+    font-size: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+.kursyvas {
+    font-style: italic;
+}
