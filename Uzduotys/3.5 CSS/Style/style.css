@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(42, 172, 172);
+}
+
+input {
+    font-family: cursive;
+    
+
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+button {
+    
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: green;
+}
+

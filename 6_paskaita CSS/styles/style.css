@@ -1,0 +1,44 @@
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    /* flex-wrap: wrap; */
+}
+
+.first-box {
+    background-color: red;
+    width: 100px;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+
+.second-box {
+    background-color: green;
+    width: 60%;
+    /* flex-shrink: 2; */
+
+}
+
+.third-box {
+    background-color: blue;
+    width: 100px;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+
+.gallery {
+display: flex;
+margin-top: 50px;
+flex-wrap: wrap;
+}
+
+.gallery img {
+    width: calc(100%/3 - 20px);
+    padding: 10px;
+}
