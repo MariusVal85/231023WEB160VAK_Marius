@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: gray;
 }
@@ -80,4 +81,88 @@ p:nth-of-type(14) {
 p:nth-of-type(15) {
     background-color: #af0893;
     margin: 0px; 
+=======
+body {
+    background-color: gray;
+}
+
+h1 {
+    background-color: silver;
+    color: #404040
+}
+
+p:nth-of-type(1) {
+    background-color: #261ff4;
+    margin: 0px;
+}
+
+p:nth-of-type(2) {
+    background-color: #342ef5;
+    margin: 0px;   
+}
+
+p:nth-of-type(3) {
+    background-color: #4741f6;
+    margin: 0px; 
+}
+
+p:nth-of-type(4) {
+    background-color: #5f59f7;
+    margin: 0px; 
+}
+
+p:nth-of-type(5) {
+    background-color: #7b77f9;
+    margin: 0px; 
+}
+
+p:nth-of-type(6) {
+    background-color: #a19efa;
+    margin: 0px; 
+}
+
+p:nth-of-type(7) {
+    background-color: #bdbbfc;
+    margin: 0px; 
+}
+
+p:nth-of-type(8) {
+    background-color: #148d07;
+    margin: 0px; 
+}
+
+p:nth-of-type(9) {
+    background-color: #fa8fe8;
+    margin: 0px; 
+}
+
+p:nth-of-type(10) {
+    background-color: #f86de1;
+    margin: 0px; 
+}
+
+p:nth-of-type(11) {
+    background-color: #f750db;
+    margin: 0px; 
+}
+
+p:nth-of-type(12) {
+    background-color: #f63cd7;
+    margin: 0px; 
+}
+
+p:nth-of-type(13) {
+    background-color: #f415cf;
+    margin: 0px; 
+}
+
+p:nth-of-type(14) {
+    background-color: #db0ab8;
+    margin: 0px; 
+}
+
+p:nth-of-type(15) {
+    background-color: #af0893;
+    margin: 0px; 
+>>>>>>> 58e738c23ba70b905a57ddec45de21124e67911e
 }
