@@ -2,8 +2,7 @@
     margin: 0 auto;
     width: 1000px;
     padding: 100px;
-    background-color: silver;
-    
+    background-color: silver;    
 }
 
 .slide {
@@ -12,12 +11,10 @@
     position: relative;
     background-color: gray;
     overflow: hidden;
-
 }
 
 .image {
     width: 100%;
-
 }
 
 .overlay {
@@ -59,10 +56,11 @@ p {
     top: 0px;
     width: 100%;
 }
+
 .menu h2 {
     margin: 0;
 }
 
 .author-image {
-    
+    border-radius: 50%;
 }
