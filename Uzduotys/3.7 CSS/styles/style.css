@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 800px;
+}
+
+.one {
+    background-color: yellow;
+    color: blue;
+    width: 100%;
+    height: 250px;
+    align-self: center;
+    
+}
+
+.two {
+    background-color: black;
+    color: blue;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
+
+.three {
+    background-color: yellow;
+    color: blue;
+    width: calc(100%/3);
+    height: 160px;
+    text-align: center;
+}
+
+.four {
+    background-color: green;
+    color: blue;
+    width: calc(100%/3);
+    height: 160px;
+    text-align: center;
+}
+
+.five {
+    background-color: red;
+    color: blue;
+    width: calc(100%/3);
+    height: 160px;
+    text-align: center;
+}
+
+.six {
+    background-color: green;
+    color: blue;
+    width: 25%;
+    height: 160px;
+    text-align: center;
+}
+
+.seven {
+    background-color: red;
+    color: blue;
+    width: 25%;
+    height: 160px;
+    text-align: center;
+}
+
+.eight {
+    background-color: yellow;
+    color: blue;
+    width: 50%;
+    height: 160px;
+    text-align: center;
+}
+
+.nine {
+    background-color: black;
+    color: blue;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+}
