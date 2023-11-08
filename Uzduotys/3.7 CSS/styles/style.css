@@ -5,13 +5,18 @@
     height: 800px;
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
 .one {
     background-color: yellow;
     color: blue;
     width: 100%;
     height: 250px;
-    align-self: center;
-    
 }
 
 .two {
@@ -19,7 +24,6 @@
     color: blue;
     width: 100%;
     height: 130px;
-    text-align: center;
 }
 
 .three {
@@ -27,7 +31,6 @@
     color: blue;
     width: calc(100%/3);
     height: 160px;
-    text-align: center;
 }
 
 .four {
@@ -35,7 +38,6 @@
     color: blue;
     width: calc(100%/3);
     height: 160px;
-    text-align: center;
 }
 
 .five {
@@ -43,7 +45,6 @@
     color: blue;
     width: calc(100%/3);
     height: 160px;
-    text-align: center;
 }
 
 .six {
@@ -51,7 +52,6 @@
     color: blue;
     width: 25%;
     height: 160px;
-    text-align: center;
 }
 
 .seven {
@@ -59,7 +59,6 @@
     color: blue;
     width: 25%;
     height: 160px;
-    text-align: center;
 }
 
 .eight {
@@ -67,7 +66,6 @@
     color: blue;
     width: 50%;
     height: 160px;
-    text-align: center;
 }
 
 .nine {
@@ -75,5 +73,4 @@
     color: blue;
     width: 100%;
     height: 130px;
-    text-align: center;
 }
