@@ -1,3 +1,18 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$primary: red;
+
+$custom-colors: (
+    "custom-color": #b80000
+);
+
+        // Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+.row p {
+    background-color: orange;
+}
