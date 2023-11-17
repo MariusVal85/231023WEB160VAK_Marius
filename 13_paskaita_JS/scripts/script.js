@@ -3,14 +3,14 @@ let kIsorinis = "Isorinis Tekstas";
 
 function funkcija() {
 
-    // Galima, bet bloga praktika
+    // Galime, bet bloga praktika, painu.
     console.log(kIsorinis);
 
-    let kVidinis = "Vidinis tekstas";
+    let kVidinis = "Vidinis Tekstas";
 }
 
-// Negalima naudoti
-// console.log(kVidinis)
+// Negalime naudoti.
+// console.log(kVidinis);
 
 // funkcija();
 
@@ -23,7 +23,7 @@ function daugParametru(...parametrai) {
         suma += value;
     })
 
-    console.log(suma);  
+    console.log(suma);
 }
 
 daugParametru(1, 5, 6, 8, 9, 15, 31, 100);
@@ -34,7 +34,7 @@ function pasisveikinimas() {
     console.log("Sveiki!");
 }
 
-// Alternatyvus funkcijos aprasymas (arrow function)
+// Alternatyvus fukcijos aprasymas (arrow funkctions)
 let pasisveikinimas2 = () => {
     console.log("Sveiki!");
 }
@@ -48,23 +48,16 @@ function pliusDu(x) {
 
 console.log(pliusDu(5));
 
-// Alternatyvus pliusDu funkcijos aprasymui
+// Alternatyva pliusDu funkcijos aprasymui
 // return tokiu atveju nerasom, grazins mums x + 2
 const pliusDu2 = (x) => x + 2;
 
 let grazintaReiksme = pliusDu2(10);
 console.log(grazintaReiksme);
 
+
 const pliusDu3 = x => x + 2;
 console.log(pliusDu3(16));
-
-function apskaiciuotiKvadrata(x) {
-    console.log("Kvadrato krastine yra " + x + "."); 
-    console.log(`Kvadrato plotas yra ${x * x}.`);
-    console.log(`Kvadrato perimetras yra ${x * 4}.`);
-}
-
-apskaiciuotiKvadrata(6);
 
 
 // let knygosPavadinimas = "Ziedu Valdovas";
@@ -73,31 +66,32 @@ apskaiciuotiKvadrata(6);
 // let knygosMasyvas = ["Ziedu Valdovas", "J. R. R. Tolkien"];
 // console.log(knygosMasyvas[0], knygosMasyvas[1]);
 
+
 // OBJEKTAS
 
 // Sukurimas
 let knyga = {
-    // Ypatybes
-    pavadinimas: "Ziedu Valdovas",
+    // Ypatybės
+    pavadinimas: "Žiedų Valdovas",
     autorius: "J. R. R. Tolkien",
     // Metodas
     pristatymas: function(leidejas = "Vaga") {
-        console.log(`leidejas: ${leidejas}`);
+        console.log(`Leidejas: ${leidejas}.`);
         console.log(`${this.autorius} knyga - ${this.pavadinimas}.`);
-    } 
-}
+    }
+};
 
-// Ypatybiu naudojimas
+// Ypatybių naudojimas
 console.log(knyga.pavadinimas);
-console.log(knyga.autorius);
+console.log(knyga["autorius"]);
 
-// Metodo iskvietimas
+// Metodo iškvietimas
 knyga.pristatymas();
 
-// Prideti nauja ypatybe metai
+// Pridėti naują ypatybę metai
 knyga.metai = 1987;
 
-// Pakeisti ypatybes pavadinimo reiksme
+// Pakeisti ypatybės pavadinimas reikšmę
 knyga.pavadinimas = "Hobitas";
 
 delete knyga.autorius;
@@ -105,19 +99,19 @@ delete knyga.autorius;
 console.log(knyga);
 
 if ("autorius" in knyga) {
-    console.log(`Knygos objektas turi ypatybe autorius - ${knyga.autorius}`);
+    console.log(`Knygos objektas turi ypatybę autorius - ${knyga.autorius}`);
 }
 
 if ("pavadinimas" in knyga) {
-    console.log(`Knygos objektas turi ypatybe pavadinimas - ${knyga.pavadinimas}`);
+    console.log(`Knygos objektas turi ypatybę pavadinimas - ${knyga.pavadinimas}`);
 }
-
 
 function Filmas(pavadinimas, rezisierius, metai) {
     this.pavadinimas = pavadinimas;
     this.rezisierius = rezisierius;
+    this.metai = metai;
     this.pristatymas = function() {
-        console.log(`${this.rezisierius} filmas - ${this.pavadinimas}`);
+        console.log(`${this.rezisierius} filmas - ${this.pavadinimas}.`);
     }
 }
 
@@ -130,30 +124,42 @@ console.log(avatar);
 indianaJones.pristatymas();
 avatar.pristatymas();
 
-let tekstas = "Kazkoks tekstas"
+
+// PAPILDOMA
+
+let tekstas = "Kažkoks tekstas";
 
 console.log(tekstas.toUpperCase());
 console.log(tekstas.toLowerCase());
 
-let daugNereikalinguTarpu = "  Tekstas      ";
+let daugNereikalinguTarpu = "   tekstas tekstas tekstas          ";
 console.log(daugNereikalinguTarpu.trim());
+
 
 let zodis = "Lietuva";
 
 console.log(zodis[3]);
-console.log(zodis.indexOf['v']);
+console.log(zodis.indexOf('v'));
 
-console.log(zodis.slice(3, 5));
-
-
+console.log(zodis.slice(zodis.indexOf('t'), zodis.indexOf('v')));
 
 
+let sakinys = "Pavyzdinis sakinys su keliais keliais keliais žodžiais.";
+let naujasSakinys = sakinys.replace("keliais", "penkiais");
+let naujasSakinys2 = sakinys.replaceAll("keliais", "penkiais");
+
+console.log(naujasSakinys);
+console.log(naujasSakinys2);
+console.log(naujasSakinys2.length);
 
 
-console.log(Math.round(1.8))
+
+console.log(Math.floor(1.8)); // 1
+console.log(Math.round(1.8)); // 2
 
 console.log(parseInt(1.568));
 console.log(parseInt("1.456"));
+
 
 let skaiciuMasyvas = [1, 5, 9, 16, 20, 4, 6, 7];
 
@@ -161,7 +167,11 @@ let naujasSkaiciuMasyvas = skaiciuMasyvas.map(function(skaicius) {
     return skaicius * 10;
 });
 
+// Alternatyva su arrow function
+// let naujasSkaiciuMasyvas = skaiciuMasyvas.map(skaicius => skaicius * 10);
+
 console.log(naujasSkaiciuMasyvas);
+
 
 let filmai = [
     new Filmas("Filmas 1", "Rezisierius 1", 1996),
@@ -173,6 +183,15 @@ let filmai = [
 
 let naujasFilmuMasyvas = filmai.filter(function(filmas) {
     return filmas.metai >= 2000;
-})
+});
+
+// Alternatyva su arrow function
+// let naujasFilmuMasyvas = filmai.filter(filmas => filmas.metai >= 2000);
 
 console.log(naujasFilmuMasyvas);
+
+
+
+
+
+

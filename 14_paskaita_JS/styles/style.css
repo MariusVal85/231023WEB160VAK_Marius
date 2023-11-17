@@ -1,0 +1,11 @@
+.active {
+    color: blue;
+}
+
+body {
+    background-color: aqua;
+}
+
+body.change-bg {
+    background-color: yellowgreen;
+}
